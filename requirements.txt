@@ -5,5 +5,5 @@ pandas
 python-dotenv
 openpyxl
 google-play-scraper
-
+app_store_scraper
 
