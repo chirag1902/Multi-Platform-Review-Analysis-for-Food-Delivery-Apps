@@ -99,7 +99,7 @@ def transform_reviews(df: pd.DataFrame, app_name:str) -> pd.DataFrame:
     
     ## rearrange the df
     df = df[['review', 'review_datetime',  'upvote_count', 'app_rating']]
-    df['datasource'] = "Google Play"
+    df['data_source'] = "Google Play"
     df['app_name'] = app_name
 
     logging.info("Transformation complete.")
