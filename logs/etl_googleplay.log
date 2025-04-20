@@ -1,0 +1,68 @@
+2025-04-20 15:53:57,666 - INFO - test log message
+2025-04-20 15:53:57,667 - INFO - ETL started for UberEats
+2025-04-20 15:54:39,941 - INFO - test log message
+2025-04-20 15:54:39,941 - INFO - ETL started for UberEats
+2025-04-20 16:26:15,205 - INFO - test log message
+2025-04-20 16:26:15,207 - INFO - ETL started for UberEats
+2025-04-20 16:26:15,207 - INFO - Extracting reviews for com.ubercab.eats
+2025-04-20 16:43:31,048 - INFO - Extracted 941006 reviews for com.ubercab.eats
+2025-04-20 16:43:31,425 - INFO - Extracted 56647 reviews for com.ubercab.eats in last 1 year (2024-04-20 16:43:31.179898)
+2025-04-20 16:43:33,741 - INFO - Raw UberEats data extracted
+2025-04-20 16:43:34,675 - INFO - Saved raw_data reviews to CSV: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\uber_eats\raw_data\google_play.csv
+2025-04-20 16:43:50,053 - INFO - Saved raw_data reviews to Excel: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\uber_eats\raw_data\google_play.xlsx
+2025-04-20 16:43:50,825 - INFO - raw_data saved to SQLite database: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\uber_eats\raw_data\google_play.db
+2025-04-20 16:43:50,826 - INFO - ===== DATA LOADING COMPLETE =====
+2025-04-20 16:43:50,827 - INFO - Saved 56647 records in CSV, Excel and SQLite formats.
+2025-04-20 16:43:50,835 - INFO - Raw UberEats files placed
+2025-04-20 16:43:50,836 - INFO - Transforming reviews...
+2025-04-20 16:43:50,972 - INFO - Transformation complete.
+2025-04-20 16:43:50,973 - INFO - Data cleaned and transformed
+2025-04-20 16:43:51,565 - INFO - Saved processed_data reviews to CSV: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\uber_eats\processed_data\google_play.csv
+2025-04-20 16:44:01,449 - INFO - Saved processed_data reviews to Excel: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\uber_eats\processed_data\google_play.xlsx
+2025-04-20 16:44:01,760 - INFO - processed_data saved to SQLite database: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\uber_eats\processed_data\google_play.db
+2025-04-20 16:44:01,761 - INFO - ===== DATA LOADING COMPLETE =====
+2025-04-20 16:44:01,761 - INFO - Saved 56647 records in CSV, Excel and SQLite formats.
+2025-04-20 16:44:01,764 - INFO - Processed UberEats files placed
+2025-04-20 16:44:01,764 - INFO - ETL completed for UberEats
+2025-04-20 16:44:01,781 - INFO - ETL started for DoorDash
+2025-04-20 16:44:01,782 - INFO - Extracting reviews for com.dd.doordash
+2025-04-20 16:53:31,460 - INFO - Extracted 695414 reviews for com.dd.doordash
+2025-04-20 16:53:31,794 - INFO - Extracted 42758 reviews for com.dd.doordash in last 1 year (2024-04-20 16:53:31.594841)
+2025-04-20 16:53:33,575 - INFO - Raw DoorDash data extracted
+2025-04-20 16:53:34,693 - INFO - Saved raw_data reviews to CSV: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\doordash\raw_data\google_play.csv
+2025-04-20 16:53:46,165 - INFO - Saved raw_data reviews to Excel: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\doordash\raw_data\google_play.xlsx
+2025-04-20 16:53:46,681 - INFO - raw_data saved to SQLite database: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\doordash\raw_data\google_play.db
+2025-04-20 16:53:46,682 - INFO - ===== DATA LOADING COMPLETE =====
+2025-04-20 16:53:46,682 - INFO - Saved 42758 records in CSV, Excel and SQLite formats.
+2025-04-20 16:53:46,687 - INFO - Raw DoorDash files placed
+2025-04-20 16:53:46,687 - INFO - Transforming reviews...
+2025-04-20 16:53:46,744 - INFO - Transformation complete.
+2025-04-20 16:53:46,744 - INFO - Data cleaned and transformed
+2025-04-20 16:53:47,202 - INFO - Saved processed_data reviews to CSV: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\doordash\processed_data\google_play.csv
+2025-04-20 16:53:53,990 - INFO - Saved processed_data reviews to Excel: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\doordash\processed_data\google_play.xlsx
+2025-04-20 16:53:54,334 - INFO - processed_data saved to SQLite database: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\doordash\processed_data\google_play.db
+2025-04-20 16:53:54,336 - INFO - ===== DATA LOADING COMPLETE =====
+2025-04-20 16:53:54,336 - INFO - Saved 42758 records in CSV, Excel and SQLite formats.
+2025-04-20 16:53:54,340 - INFO - Processed DoorDash files placed
+2025-04-20 16:53:54,340 - INFO - ETL completed for DoorDash
+2025-04-20 16:53:54,361 - INFO - ETL started for GrubHub
+2025-04-20 16:53:54,362 - INFO - Extracting reviews for com.grubhub.android
+2025-04-20 16:56:44,304 - INFO - Extracted 199119 reviews for com.grubhub.android
+2025-04-20 16:56:44,375 - INFO - Extracted 5760 reviews for com.grubhub.android in last 1 year (2024-04-20 16:56:44.334028)
+2025-04-20 16:56:44,464 - INFO - Raw GrubHub data extracted
+2025-04-20 16:56:44,555 - INFO - Saved raw_data reviews to CSV: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\grubhub\raw_data\google_play.csv
+2025-04-20 16:56:46,332 - INFO - Saved raw_data reviews to Excel: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\grubhub\raw_data\google_play.xlsx
+2025-04-20 16:56:46,442 - INFO - raw_data saved to SQLite database: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\grubhub\raw_data\google_play.db
+2025-04-20 16:56:46,443 - INFO - ===== DATA LOADING COMPLETE =====
+2025-04-20 16:56:46,443 - INFO - Saved 5760 records in CSV, Excel and SQLite formats.
+2025-04-20 16:56:46,444 - INFO - Raw GrubHub files placed
+2025-04-20 16:56:46,444 - INFO - Transforming reviews...
+2025-04-20 16:56:46,464 - INFO - Transformation complete.
+2025-04-20 16:56:46,464 - INFO - Data cleaned and transformed
+2025-04-20 16:56:46,504 - INFO - Saved processed_data reviews to CSV: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\grubhub\processed_data\google_play.csv
+2025-04-20 16:56:47,609 - INFO - Saved processed_data reviews to Excel: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\grubhub\processed_data\google_play.xlsx
+2025-04-20 16:56:47,685 - INFO - processed_data saved to SQLite database: c:\Users\16096\Documents\KAJAL\Semester2\Data Wrangling\Projects-HW\project-group-19\data\grubhub\processed_data\google_play.db
+2025-04-20 16:56:47,685 - INFO - ===== DATA LOADING COMPLETE =====
+2025-04-20 16:56:47,685 - INFO - Saved 5760 records in CSV, Excel and SQLite formats.
+2025-04-20 16:56:47,686 - INFO - Processed GrubHub files placed
+2025-04-20 16:56:47,686 - INFO - ETL completed for GrubHub
