@@ -173,7 +173,3 @@ def main(app_id: str, app_path: str, app_name: str):
         logging.error(f"Error processing {app_name}: {e}")
 
 
-if __name__ == "__main__":
-    main("com.ubercab.eats", "uber_eats", "UberEats")
-    main("com.dd.doordash", "doordash", "DoorDash")
-    main("com.grubhub.android", "grubhub", "GrubHub")
