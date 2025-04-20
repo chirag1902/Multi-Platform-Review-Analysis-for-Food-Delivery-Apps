@@ -102,7 +102,7 @@ def Processed_Reviews(df_raw: pd.DataFrame, app_name: str):
         df_clean = df_clean[["review_datetime", "review", "rating"]].copy()
         df_clean.dropna(subset=["review_datetime", "review"], inplace=True)
 
-        df_clean["datasource"] = "App Store"
+        df_clean["data_source"] = "App Store"
         df_clean["app_name"] = app_name
 
         return df_clean
