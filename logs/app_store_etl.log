@@ -1,0 +1,140 @@
+2025-04-20 15:56:45 | INFO | \U0001f680 Starting ETL pipeline for UberEats
+2025-04-20 15:56:45 | INFO | \U0001f504 Starting raw review fetch for UberEats
+2025-04-20 15:56:46 | INFO | Initialised: AppStore('us', 'ubereats', 1058959277)
+2025-04-20 15:56:46 | INFO | Ready to fetch reviews from: https://apps.apple.com/us/app/ubereats/id1058959277
+2025-04-20 15:56:50 | ERROR | Keyboard interrupted
+2025-04-20 15:56:50 | INFO | [id:1058959277] Fetched 100 reviews (100 fetched in total)
+2025-04-20 15:56:50 | INFO | Raw data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.csv
+2025-04-20 15:56:51 | INFO | Raw data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.xlsx
+2025-04-20 15:56:51 | INFO | Raw data saved to SQLite database: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.db
+2025-04-20 15:56:51 | INFO | \u2728 Starting review processing for UberEats
+2025-04-20 15:56:51 | INFO | Processed data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.csv
+2025-04-20 15:56:51 | INFO | Processed data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.xlsx
+2025-04-20 15:56:51 | INFO | Processed data saved to SQLite database: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.db
+2025-04-20 15:56:51 | INFO | \U0001f3c1 Finished ETL pipeline for UberEats
+2025-04-20 15:57:18 | INFO | \U0001f680 Starting ETL pipeline for UberEats
+2025-04-20 15:57:18 | INFO | \U0001f504 Starting raw review fetch for UberEats
+2025-04-20 15:57:18 | INFO | Initialised: AppStore('us', 'ubereats', 1058959277)
+2025-04-20 15:57:18 | INFO | Ready to fetch reviews from: https://apps.apple.com/us/app/ubereats/id1058959277
+2025-04-20 15:57:24 | INFO | [id:1058959277] Fetched 160 reviews (160 fetched in total)
+2025-04-20 15:57:30 | INFO | [id:1058959277] Fetched 340 reviews (340 fetched in total)
+2025-04-20 15:57:36 | INFO | [id:1058959277] Fetched 460 reviews (460 fetched in total)
+2025-04-20 15:57:42 | INFO | [id:1058959277] Fetched 540 reviews (540 fetched in total)
+2025-04-20 15:57:50 | INFO | [id:1058959277] Fetched 640 reviews (640 fetched in total)
+2025-04-20 15:57:57 | INFO | [id:1058959277] Fetched 720 reviews (720 fetched in total)
+2025-04-20 15:58:05 | INFO | [id:1058959277] Fetched 820 reviews (820 fetched in total)
+2025-04-20 15:58:14 | INFO | [id:1058959277] Fetched 900 reviews (900 fetched in total)
+2025-04-20 16:26:07 | INFO | \U0001f680 Starting ETL pipeline for UberEats
+2025-04-20 16:26:07 | INFO | \U0001f504 Starting raw review fetch for UberEats
+2025-04-20 16:26:08 | INFO | \U0001f680 Starting ETL pipeline for UberEats
+2025-04-20 16:26:08 | INFO | \U0001f504 Starting raw review fetch for UberEats
+2025-04-20 16:26:08 | INFO | Initialised: AppStore('us', 'ubereats', 1058959277)
+2025-04-20 16:26:08 | INFO | Ready to fetch reviews from: https://apps.apple.com/us/app/ubereats/id1058959277
+2025-04-20 16:26:09 | INFO | Initialised: AppStore('us', 'ubereats', 1058959277)
+2025-04-20 16:26:09 | INFO | Ready to fetch reviews from: https://apps.apple.com/us/app/ubereats/id1058959277
+2025-04-20 16:26:14 | INFO | [id:1058959277] Fetched 120 reviews (120 fetched in total)
+2025-04-20 16:26:14 | INFO | [id:1058959277] Fetched 120 reviews (120 fetched in total)
+2025-04-20 16:26:20 | INFO | [id:1058959277] Fetched 240 reviews (240 fetched in total)
+2025-04-20 16:26:21 | INFO | [id:1058959277] Fetched 260 reviews (260 fetched in total)
+2025-04-20 16:26:26 | INFO | [id:1058959277] Fetched 360 reviews (360 fetched in total)
+2025-04-20 16:26:27 | INFO | [id:1058959277] Fetched 380 reviews (380 fetched in total)
+2025-04-20 16:26:33 | INFO | [id:1058959277] Fetched 500 reviews (500 fetched in total)
+2025-04-20 16:26:34 | INFO | [id:1058959277] Fetched 520 reviews (520 fetched in total)
+2025-04-20 16:26:39 | INFO | [id:1058959277] Fetched 640 reviews (640 fetched in total)
+2025-04-20 16:26:40 | INFO | [id:1058959277] Fetched 660 reviews (660 fetched in total)
+2025-04-20 16:26:46 | INFO | [id:1058959277] Fetched 780 reviews (780 fetched in total)
+2025-04-20 16:26:47 | INFO | [id:1058959277] Fetched 800 reviews (800 fetched in total)
+2025-04-20 16:26:52 | INFO | [id:1058959277] Fetched 900 reviews (900 fetched in total)
+2025-04-20 16:26:54 | INFO | [id:1058959277] Fetched 920 reviews (920 fetched in total)
+2025-04-20 16:27:00 | INFO | [id:1058959277] Fetched 980 reviews (980 fetched in total)
+2025-04-20 16:27:02 | INFO | [id:1058959277] Fetched 1000 reviews (1000 fetched in total)
+2025-04-20 16:27:02 | INFO | [id:1058959277] Fetched 1000 reviews (1000 fetched in total)
+2025-04-20 16:27:02 | INFO | Raw data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.csv
+2025-04-20 16:27:02 | INFO | Raw data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.csv
+2025-04-20 16:27:04 | INFO | Raw data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.xlsx
+2025-04-20 16:27:04 | ERROR | Error saving to SQLite: Error binding parameter 7: type 'dict' is not supported
+2025-04-20 16:27:04 | INFO | \u2728 Starting review processing for UberEats
+2025-04-20 16:27:04 | INFO | Processed data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.csv
+2025-04-20 16:27:04 | INFO | Processed data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.xlsx
+2025-04-20 16:27:04 | INFO | Processed data saved to SQLite database: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.db
+2025-04-20 16:27:04 | INFO | \U0001f3c1 Finished ETL pipeline for UberEats
+2025-04-20 16:27:05 | INFO | Raw data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.xlsx
+2025-04-20 16:27:05 | ERROR | Error saving to SQLite: Error binding parameter 7: type 'dict' is not supported
+2025-04-20 16:27:05 | INFO | \u2728 Starting review processing for UberEats
+2025-04-20 16:27:05 | INFO | Processed data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.csv
+2025-04-20 16:27:06 | INFO | Processed data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.xlsx
+2025-04-20 16:27:06 | INFO | Processed data saved to SQLite database: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.db
+2025-04-20 16:27:06 | INFO | \U0001f3c1 Finished ETL pipeline for UberEats
+2025-04-20 16:32:03 | INFO | \U0001f680 Starting ETL pipeline for UberEats
+2025-04-20 16:32:03 | INFO | \U0001f504 Starting raw review fetch for UberEats
+2025-04-20 16:32:04 | INFO | Initialised: AppStore('us', 'ubereats', 1058959277)
+2025-04-20 16:32:04 | INFO | Ready to fetch reviews from: https://apps.apple.com/us/app/ubereats/id1058959277
+2025-04-20 16:32:10 | INFO | [id:1058959277] Fetched 120 reviews (120 fetched in total)
+2025-04-20 16:32:17 | INFO | [id:1058959277] Fetched 260 reviews (260 fetched in total)
+2025-04-20 16:32:23 | INFO | [id:1058959277] Fetched 420 reviews (420 fetched in total)
+2025-04-20 16:32:25 | INFO | \U0001f680 Starting ETL pipeline for UberEats
+2025-04-20 16:32:25 | INFO | \U0001f504 Starting raw review fetch for UberEats
+2025-04-20 16:32:25 | INFO | Initialised: AppStore('us', 'ubereats', 1058959277)
+2025-04-20 16:32:25 | INFO | Ready to fetch reviews from: https://apps.apple.com/us/app/ubereats/id1058959277
+2025-04-20 16:32:29 | INFO | [id:1058959277] Fetched 560 reviews (560 fetched in total)
+2025-04-20 16:32:31 | INFO | [id:1058959277] Fetched 120 reviews (120 fetched in total)
+2025-04-20 16:32:32 | INFO | \U0001f680 Starting ETL pipeline for UberEats
+2025-04-20 16:32:32 | INFO | \U0001f504 Starting raw review fetch for UberEats
+2025-04-20 16:32:33 | INFO | Initialised: AppStore('us', 'ubereats', 1058959277)
+2025-04-20 16:32:33 | INFO | Ready to fetch reviews from: https://apps.apple.com/us/app/ubereats/id1058959277
+2025-04-20 16:32:36 | INFO | [id:1058959277] Fetched 700 reviews (700 fetched in total)
+2025-04-20 16:32:37 | INFO | [id:1058959277] Fetched 260 reviews (260 fetched in total)
+2025-04-20 16:32:42 | INFO | [id:1058959277] Fetched 860 reviews (860 fetched in total)
+2025-04-20 16:32:43 | INFO | [id:1058959277] Fetched 420 reviews (420 fetched in total)
+2025-04-20 16:32:43 | INFO | [id:1058959277] Fetched 100 reviews (100 fetched in total)
+2025-04-20 16:32:49 | INFO | [id:1058959277] Fetched 260 reviews (260 fetched in total)
+2025-04-20 16:32:56 | INFO | [id:1058959277] Fetched 360 reviews (360 fetched in total)
+2025-04-20 16:33:05 | INFO | [id:1058959277] Fetched 440 reviews (440 fetched in total)
+2025-04-20 16:33:13 | INFO | [id:1058959277] Fetched 520 reviews (520 fetched in total)
+2025-04-20 16:33:16 | ERROR | Keyboard interrupted
+2025-04-20 16:33:16 | INFO | [id:1058959277] Fetched 560 reviews (560 fetched in total)
+2025-04-20 16:33:16 | INFO | Raw data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.csv
+2025-04-20 16:33:17 | INFO | Raw data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.xlsx
+2025-04-20 16:33:17 | INFO | Raw data saved to SQLite database: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.db
+2025-04-20 16:33:17 | INFO | \u2728 Starting review processing for UberEats
+2025-04-20 16:33:17 | INFO | Processed data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.csv
+2025-04-20 16:33:17 | INFO | Processed data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.xlsx
+2025-04-20 16:33:17 | INFO | Processed data saved to SQLite database: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.db
+2025-04-20 16:33:17 | INFO | \U0001f3c1 Finished ETL pipeline for UberEats
+2025-04-20 16:33:31 | INFO | \U0001f680 Starting ETL pipeline for UberEats
+2025-04-20 16:33:31 | INFO | \U0001f504 Starting raw review fetch for UberEats
+2025-04-20 16:33:33 | INFO | Initialised: AppStore('us', 'ubereats', 1058959277)
+2025-04-20 16:33:33 | INFO | Ready to fetch reviews from: https://apps.apple.com/us/app/ubereats/id1058959277
+2025-04-20 16:33:39 | INFO | [id:1058959277] Fetched 100 reviews (100 fetched in total)
+2025-04-20 16:33:46 | INFO | [id:1058959277] Fetched 220 reviews (220 fetched in total)
+2025-04-20 16:33:48 | ERROR | Keyboard interrupted
+2025-04-20 16:33:48 | INFO | [id:1058959277] Fetched 240 reviews (240 fetched in total)
+2025-04-20 16:33:48 | INFO | Raw data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.csv
+2025-04-20 16:33:49 | INFO | Raw data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.xlsx
+2025-04-20 16:33:49 | INFO | Raw data saved to SQLite database: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.db
+2025-04-20 16:33:49 | INFO | \u2728 Starting review processing for UberEats
+2025-04-20 16:33:49 | INFO | Processed data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.csv
+2025-04-20 16:33:49 | INFO | Processed data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.xlsx
+2025-04-20 16:33:49 | INFO | Processed data saved to SQLite database: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.db
+2025-04-20 16:33:49 | INFO | \U0001f3c1 Finished ETL pipeline for UberEats
+2025-04-20 16:33:53 | INFO | \U0001f680 Starting ETL pipeline for UberEats
+2025-04-20 16:33:53 | INFO | \U0001f504 Starting raw review fetch for UberEats
+2025-04-20 16:33:54 | INFO | Initialised: AppStore('us', 'ubereats', 1058959277)
+2025-04-20 16:33:54 | INFO | Ready to fetch reviews from: https://apps.apple.com/us/app/ubereats/id1058959277
+2025-04-20 16:34:00 | INFO | [id:1058959277] Fetched 100 reviews (100 fetched in total)
+2025-04-20 16:34:06 | INFO | [id:1058959277] Fetched 220 reviews (220 fetched in total)
+2025-04-20 16:34:13 | INFO | [id:1058959277] Fetched 360 reviews (360 fetched in total)
+2025-04-20 16:34:19 | INFO | [id:1058959277] Fetched 480 reviews (480 fetched in total)
+2025-04-20 16:34:27 | INFO | [id:1058959277] Fetched 600 reviews (600 fetched in total)
+2025-04-20 16:34:33 | INFO | [id:1058959277] Fetched 700 reviews (700 fetched in total)
+2025-04-20 16:34:40 | INFO | [id:1058959277] Fetched 820 reviews (820 fetched in total)
+2025-04-20 16:34:47 | INFO | [id:1058959277] Fetched 960 reviews (960 fetched in total)
+2025-04-20 16:34:49 | INFO | [id:1058959277] Fetched 1000 reviews (1000 fetched in total)
+2025-04-20 16:34:49 | INFO | Raw data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.csv
+2025-04-20 16:34:49 | INFO | Raw data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\raw_data\app_store.xlsx
+2025-04-20 16:34:50 | ERROR | Error saving to SQLite: Error binding parameter 7: type 'dict' is not supported
+2025-04-20 16:34:50 | INFO | \u2728 Starting review processing for UberEats
+2025-04-20 16:34:50 | INFO | Processed data saved to CSV: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.csv
+2025-04-20 16:34:50 | INFO | Processed data saved to Excel: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.xlsx
+2025-04-20 16:34:50 | INFO | Processed data saved to SQLite database: c:\Users\Dhruv\Desktop\Spring2025\DW-Project\project-group-19\data\uber_eats\processed_data\app_store.db
+2025-04-20 16:34:50 | INFO | \U0001f3c1 Finished ETL pipeline for UberEats
