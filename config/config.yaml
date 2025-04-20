@@ -2,3 +2,8 @@ reddit_api:
   client_id: ${REDDIT_CLIENT_ID}
   client_secret: ${REDDIT_CLIENT_SECRET}
   user_agent: ${REDDIT_USER_AGENT}
+
+
+aws:
+  region_name: ${AWS_REGION}
+  bucket_name: ${AWS_BUCKET_NAME}
