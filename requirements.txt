@@ -1,0 +1,6 @@
+asyncpraw
+praw
+pyyaml
+pandas
+python-dotenv
+openpyxl
