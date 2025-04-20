@@ -722,3 +722,5 @@ def run_sanity_tests(df):
     assert uppercase_reviews == 0, f"Error: Found {uppercase_reviews} reviews with uppercase characters"
 
     logger.info("All sanity tests passed!")
+    
+    
