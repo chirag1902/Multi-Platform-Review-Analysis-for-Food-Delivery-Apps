@@ -6,4 +6,6 @@ python-dotenv
 openpyxl
 google-play-scraper
 app_store_scraper
+boto3
+botocore.exceptions
 

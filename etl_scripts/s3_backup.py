@@ -179,4 +179,3 @@ def main():
     logger.info(f"S3 backup process completed. Total files uploaded: {total_files}")
     return 0
 
-
