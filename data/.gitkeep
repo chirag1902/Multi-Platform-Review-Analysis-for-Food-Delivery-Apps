@@ -1,6 +1,0 @@
-touch data/uber_eats/raw_data/.gitkeep
-touch data/uber_eats/processed_data/.gitkeep
-touch data/doordash/raw_data/.gitkeep
-touch data/doordash/processed_data/.gitkeep
-touch data/grubhub/raw_data/.gitkeep
-touch data/grubhub/processed_data/.gitkeep
