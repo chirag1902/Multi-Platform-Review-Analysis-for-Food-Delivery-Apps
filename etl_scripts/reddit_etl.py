@@ -724,3 +724,29 @@ def run_sanity_tests(df):
     logger.info("All sanity tests passed!")
     
     
+if __name__ == "__main__":
+    try:
+        start_time = time.time()
+
+        # List of app configurations
+        apps = [
+            {"app_name": "UberEats", "subreddit_name": "UberEATS", "app_path": "uber_eats"},
+            {"app_name": "DoorDash", "subreddit_name": "doordash", "app_path": "doordash"},
+            {"app_name": "GrubHub", "subreddit_name": "grubhubdrivers", "app_path": "grubhub"},
+        ]
+
+        for config in apps:
+            logger.info(f"Starting collection for {config['app_name']}...")
+            asyncio.run(main(config['app_name'], config['subreddit_name'], config['app_path']))
+            logger.info(f"Finished collection for {config['app_name']}.")
+
+        end_time = time.time()
+
+        # Log execution statistics
+        execution_time = end_time - start_time
+        logger.info(f"Total execution time: {execution_time:.2f} seconds ({execution_time/60:.2f} minutes)")
+        logger.info("Collection complete. Data saved to CSV files.")
+
+    except Exception as e:
+        logger.error(f"Error in main execution: {e}")
+        logger.exception("Detailed traceback:")
