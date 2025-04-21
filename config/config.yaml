@@ -7,21 +7,21 @@ aws:
   region_name: ${AWS_REGION}
   bucket_name: ${AWS_BUCKET_NAME}
 
-  apps:
-    - app_name: "UberEats"
-      subreddit_name: "UberEATS"
-      app_path: "uber_eats"
-      app_store_id: 1058959277
-      play_store_id: "com.ubercab.eats"
+apps:
+  - app_name: "UberEats"
+    subreddit_name: "UberEATS"
+    app_path: "uber_eats"
+    app_store_id: 1058959277
+    play_store_id: "com.ubercab.eats"
 
-    - app_name: "DoorDash"
-      subreddit_name: "doordash"
-      app_path: "doordash"
-      app_store_id: 719972451
-      play_store_id: "com.dd.doordash"
+  - app_name: "DoorDash"
+    subreddit_name: "doordash"
+    app_path: "doordash"
+    app_store_id: 719972451
+    play_store_id: "com.dd.doordash"
 
-    - app_name: "GrubHub"
-      subreddit_name: "grubhubdrivers"
-      app_path: "grubhub"
-      app_store_id: 302920553
-      play_store_id: "com.grubhub.android"
+  - app_name: "GrubHub"
+    subreddit_name: "grubhubdrivers"
+    app_path: "grubhub"
+    app_store_id: 302920553
+    play_store_id: "com.grubhub.android"
