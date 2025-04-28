@@ -107,7 +107,7 @@ def Processed_Reviews(df_raw: pd.DataFrame, app_name: str):
 
         return df_clean
     except Exception as e:
-        logger.error(f"❌ Error in Processed_Reviews for {app_name}: {str(e)}")
+        logger.error(f" Error in Processed_Reviews for {app_name}: {str(e)}")
         return pd.DataFrame()
 
 # ------------------------------------
@@ -152,6 +152,25 @@ def save_processed_data(df, app_path):
     return str(csv_file)
 
 # ------------------------------------
+# SANITY CHECKS FUNCTION
+# ------------------------------------
+def sanity_checks(df: pd.DataFrame, context: str = ""):
+    logger.info(f"🧪 Running sanity checks {f'for {context}' if context else ''}")
+
+    # Check if dataframe is empty
+    assert not df.empty, f"Sanity Check Failed: {context} - DataFrame is empty!"
+
+    # Check for missing values
+    assert df.isnull().sum().sum() == 0, f"Sanity Check Failed: {context} - Missing values detected!"
+
+    # Check if number of rows is reasonable
+    min_expected_rows = 5  # Adjust based on expectations
+    assert len(df) >= min_expected_rows, f"Sanity Check Failed: {context} - Unexpectedly low number of rows: {len(df)}"
+    
+    logger.info(f"✅ Sanity checks passed {f'for {context}' if context else ''}")
+
+
+# ------------------------------------
 # MAIN WRAPPER FUNCTION
 # ------------------------------------
 
@@ -161,16 +180,33 @@ def main(app_name: str, app_path: str, app_id: int, review_count: int = 1000, co
     # Run raw ETL
     df_raw = Raw_Reviews(app_name, app_id, country, n=review_count)
     
+    # --- SANITY CHECK raw data ---
+    sanity_checks(df_raw, context="Raw Data")
+
+    # --- BASIC PYTHON ASSERTS for raw data ---
+    assert not df_raw.empty, " Raw DataFrame is empty!"
+    assert df_raw.isnull().sum().sum() == 0, " Raw DataFrame has missing values!"
+    assert len(df_raw) >= 5, f" Raw DataFrame has too few rows: {len(df_raw)}"
+
     # Save raw data in multiple formats
     save_raw_data(df_raw, app_path)
     
     # Process the raw data
     df_processed = Processed_Reviews(df_raw, app_name)
     
+    # --- SANITY CHECK processed data ---
+    sanity_checks(df_processed, context="Processed Data")
+
+    # --- BASIC PYTHON ASSERTS for processed data ---
+    assert not df_processed.empty, " Processed DataFrame is empty!"
+    assert df_processed.isnull().sum().sum() == 0, " Processed DataFrame has missing values!"
+    assert len(df_processed) >= 5, f" Processed DataFrame has too few rows: {len(df_processed)}"
+
     # Save processed data in multiple formats
     save_processed_data(df_processed, app_path)
 
-    logger.info(f"🏁 Finished ETL pipeline for {app_name}")
+    logger.info(f"Finished ETL pipeline for {app_name}")
+
     
 
 
