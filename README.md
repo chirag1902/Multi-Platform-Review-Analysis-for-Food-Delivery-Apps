@@ -21,11 +21,11 @@ https://moran-teaching.github.io/project-repo/????????????
 
 Our raw data can be downloaded here:
 
-[[Insert link to raw data](https://drive.google.com/drive/folders/1KH3YcLmdXMqzQBhitRqoxuh1rto7HAZU?usp=drive_link)]
+[[Link to Raw Data](https://drive.google.com/drive/folders/11Koqtf_hD30G_7U7SKrjb2kys9hU9P80?usp=sharing)]
 
 Our processed data can be downloaded here:
 
-[[Insert link to processed data](https://drive.google.com/drive/folders/1vh8fxT1L7R0wrwamN2LZPih3YBMH2oEN?usp=drive_link)]
+[[Link to Processed Data](https://drive.google.com/drive/folders/11Koqtf_hD30G_7U7SKrjb2kys9hU9P80?usp=sharing)]
 
 NOTE: do not include your data in your git repo - it will likely be too large and cause issues.
 
@@ -171,8 +171,22 @@ They provided an initial **high-level view** of customer feedback patterns acros
 7. present around 4-6 visualizations related to the data, explain trends and conclusions
 
 You should have at least one interactive data widget.
-![EDA](src/EDA.png)
-![Yearly-Analysis](src/Yearly-Analysis.png)
+<img src="src/EDA.png" width="600">
+
+**Description:**  
+The above plot compares the number of reviews received on Google Play and Reddit for each app (Ubereats, Doordash, Grubhub). Ubereats dominates in both platforms, followed by Doordash and Grubhub.
+
+---
+
+### 📈 Monthly Review Counts per App
+
+<img src="src/Yearly-Analysis.png" width="600">
+
+**Description:**  
+The line graph shows how review counts varied month-over-month for each app. Ubereats and Doordash show seasonal patterns while Grubhub remains lower and stable.
+
+---
+
 ![Emotion_Analysis](src/Emotion_Analysis.png)
 ![Zero-Shot_Classification](src/Zero-Shot_Cassification.png)
 ![Topic_Modeling](src/Topic_Modeling)
