@@ -50,74 +50,39 @@ The following scripts/notebooks were used produce the summary:
 
 Provide a `requirements.txt` file with packages and versions of all python packages to run the analysis.
 
-🚀 Step-by-Step Procedure
-1️⃣ Identify the App Name and Details
-Decide on the new app you want to collect reviews for.
+### 1. **Clone the Repository**
+```bash
+git clone https://github.com/moran-teaching/project-group-19.git
+cd project-group-19
+```
 
-Gather the exact app name and details as used on:
+### 2. **Install Required Dependencies**
+Make sure Python is installed, then run:
+```bash
+pip install -r requirements.txt
+```
 
-Google Play → app name or package name (use Google Play Developer Console or URL).
+### 3. **Run the ETL Pipeline**
+This script extracts and processes reviews from the App Store, Google Play, and Reddit:
+```bash
+python pipeline/run_pipeline.py
+```
 
-App Store (iOS) → app name or App Store ID.
+### 4. **Run the Notebooks**
+Open and run the notebooks in your preferred environment in the following order:
 
-Reddit → app-related keywords or subreddit(s) related to the app.
+- `notebooks/EDA.ipynb`
+- `notebooks/Emotion_Analysis.ipynb`
+- `notebooks/Sentiment_Analysis.ipynb`
+- `notebooks/Topic_Modeling.ipynb`
+- `notebooks/Zero_Shot_Classification.ipynb`
 
-2️⃣ Update ETL Scripts (In etl_scripts/)
-➡️ Google Play Reviews
-Open google_play_etl.py.
+### 5. **View the Quarto Documentation Website**
+If Quarto is installed, you can preview the documentation site:
+```bash
+quarto preview
+```
 
-Change the app/package name where reviews are fetched.
-
-Use libraries like google-play-scraper or adjust API endpoints accordingly.
-
-➡️ App Store Reviews
-Open app_store_etl.py.
-
-Change the app ID or app name in the scraping logic.
-
-Ensure the region and review parameters suit your needs.
-
-➡️ Reddit Reviews
-Open reddit_etl.py.
-
-Change the search keywords or subreddit to reflect your new app.
-
-Update filters if necessary to collect relevant posts/comments.
-
-3️⃣ Update combined_platform_review.py
-Make sure this script still correctly merges the datasets for the new app.
-
-Update any hardcoded app names if required.
-
-4️⃣ Re-run the ETL Pipeline
-Run the ETL scripts to extract and combine reviews from all platforms.
-
-Ensure CSVs are generated and combined properly.
-
-bash
-Copy
-Edit
-python etl_scripts/google_play_etl.py
-python etl_scripts/app_store_etl.py
-python etl_scripts/reddit_etl.py
-python etl_scripts/combined_platform_review.py
-5️⃣ Update Notebooks (If required)
-Go to notebooks/ and change the app names wherever used.
-
-This is to make the plots and analysis relevant to your new app (visualizations, sentiment analysis, topic modeling, etc.)
-
-6️⃣ Run Analysis Pipelines
-Execute the analysis notebooks to generate plots and insights.
-
-You can also modify them to suit the new app’s context (optional).
-
-7️⃣ Export and Visualize
-Review the generated plots.
-
-You can export plots and summaries for presentation or reporting.
-
-8️⃣ (Optional) Backup on S3
-The existing pipeline supports backup. Change the folder names in S3 bucket upload scripts if you wish to backup new app reviews.
 
 ## Guide
 
