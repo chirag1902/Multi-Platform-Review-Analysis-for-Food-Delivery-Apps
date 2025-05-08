@@ -187,7 +187,7 @@ Finally, the results from these models are aggregated and visualized to enable d
 
 ### 📈 Monthly Review Counts per App
 
-<img src="src/filename.png" width="600" style="display: block; margin-left: 0;">
+<img src="src/Yearly-Analysis.png" width="600" style="display: block; margin-left: 0;">
 
 **Description:**  
 The line graph shows review counts varied month-over-month. UberEats and Doordash show seasonal trends, Grubhub is more stable.
