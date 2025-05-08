@@ -159,6 +159,11 @@ They provided an initial **high-level view** of customer feedback patterns acros
 7. present around 4-6 visualizations related to the data, explain trends and conclusions
 
 You should have at least one interactive data widget.
+![EDA](src\EDA.png)
+![Yearly-Analysis](src\Yearly-Analysis.png)
+![Emotion_Analysis](src\Emotion_Analysis.png)
+![Zero-Shot_Classification](src\Zero-Shot_Cassification.png)
+![Topic_Modeling](src\Zero-Shot_Cassification.png)
 
 You can include figures for example from an external notebook:
 - https://quarto.org/docs/blog/posts/2023-03-17-jupyter-cell-embedding/ 
