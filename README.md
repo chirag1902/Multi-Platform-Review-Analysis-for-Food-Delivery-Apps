@@ -20,8 +20,6 @@ Our processed data can be downloaded here:
 
 [[Link to Processed Data](https://drive.google.com/drive/folders/11Koqtf_hD30G_7U7SKrjb2kys9hU9P80?usp=sharing)]
 
-NOTE: do not include your data in your git repo - it will likely be too large and cause issues.
-
 ## Python scripts / notebooks
 
 The following scripts/notebooks were used produce the summary:
@@ -43,13 +41,7 @@ The following scripts/notebooks were used produce the summary:
 - `notebooks/Zero_Shot_Classification.ipynb` Classifies reviews into categories using zero-shot classification with Hugging Face models.
 
 
-
-[Give a short description of what the notebooks contain, and their location in the git repo]
-
-
 ## Reproducibility
-
-Provide a `requirements.txt` file with packages and versions of all python packages to run the analysis.
 
 ### 1. **Clone the Repository**
 ```bash
@@ -109,10 +101,6 @@ quarto preview
 ## Guide
 
 ### Summary
-
-Your summary should include the following. 
-
-Note: You do not need code in your summary - instead, reference where in your github repo the code is. The priority should be a concise, readable summary. You should include visualizations and conclusions regarding your data analysis.
 
 # 1. Data Collection and Sources
 The data for this project was extracted from three major digital platforms: Reddit, Google Play Store, and Apple App Store.
@@ -193,8 +181,6 @@ Beyond cleaning the raw reviews, we performed several **data enrichment** steps 
 
 These enrichment steps enhanced the original datasets, making them **more informative**, **machine-readable**, and **ready for deeper sentiment, emotion, and trend analysis** across multiple dimensions.
 
-
-
 # 6. Summary Statistics
 
 After cleaning and enriching the dataset, we calculated several **summary statistics** to better understand the overall trends and patterns in user reviews across platforms and apps.
@@ -216,11 +202,6 @@ Key summary statistics include:
   - Summarized the number of reviews per month, showing how review volume changed over time (e.g., seasonal trends, spikes around holidays, service promotions).
 These descriptive statistics laid the groundwork for more advanced analyses such as sentiment modeling, clustering, and topic extraction.  
 They provided an initial **high-level view** of customer feedback patterns across multiple platforms.
-
-
-7. present around 4-6 visualizations related to the data, explain trends and conclusions
-
-You should have at least one interactive data widget.
 
 ### 📌 Data Architecture
 
@@ -288,35 +269,9 @@ You can include figures for example from an external notebook:
 - https://quarto.org/docs/authoring/includes.html
 
 
-8. at the end, display a graph of the git commit history
-
-For team members of 2: 10 commits. Of 3: 15 commits. Of 4: 20 commits.
-
-Your commits history elsewhere may be more dirty, but these 10-20 commits need to be clean and can be drawn as a graph.
-
-Make sure your git graphs include author names, commit messages, date, git tags if any.
-
-You can generate nice graphs of git commits with many tools. Among others, you could generate git-graphs using the following tools:
-
-
-- in vscode: https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
-- https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs
-- https://www.gitkraken.com/solutions/commit-graph
+## 8. **Git Commit graph**
 
 ---
 ![Commit History Graph](src/Commit_Graph.jpg)
 
-### Data storage options
-
-Some options for data storage:
-
-- Box link (free with Rutgers account)
-- Dropbox
-- Google Drive
-
-The following companies have free data storage (up to ~5 GB) for 12 months. Be careful to make sure you're within the free limits!!!
-
-- AWS S3 https://aws.amazon.com/s3/
-- Google Cloud https://cloud.google.com/free
-- Microsoft Azure https://azure.microsoft.com/en-us/free/students
 
