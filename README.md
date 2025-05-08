@@ -46,6 +46,11 @@ The following scripts/notebooks were used produce the summary:
 
 [Give a short description of what the notebooks contain, and their location in the git repo]
 
+
+## Reproducibility
+
+Provide a `requirements.txt` file with packages and versions of all python packages to run the analysis.
+
 ### 1. **Clone the Repository**
 ```bash
 git clone https://github.com/moran-teaching/project-group-19.git
