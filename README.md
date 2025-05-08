@@ -21,22 +21,34 @@ https://moran-teaching.github.io/project-repo/????????????
 
 Our raw data can be downloaded here:
 
-[Insert link to raw data]
+[[Link to Raw Data](https://drive.google.com/drive/folders/11Koqtf_hD30G_7U7SKrjb2kys9hU9P80?usp=sharing)]
 
 Our processed data can be downloaded here:
 
-[Insert link to processed data]
+[[Link to Processed Data](https://drive.google.com/drive/folders/11Koqtf_hD30G_7U7SKrjb2kys9hU9P80?usp=sharing)]
 
 NOTE: do not include your data in your git repo - it will likely be too large and cause issues.
 
 ## Python scripts / notebooks
 
 The following scripts/notebooks were used produce the summary:
+### pipeline/: Orchestrates the ETL workflow by running scripts to extract reviews from APIs and process them sequentially.
+- `pipeline/run_pipeline.py` Executes all ETL scripts in order (App Store, Google Play, Reddit) to extract reviews using APIs and generate processed datasets.
 
-- `src/script.py`
-- `notebooks/data_cleaning.ipynb`
-- `notebooks/data_enrichment.ipynb`
-- `notebooks/data_analysis.ipynb`
+### etl_scripts/: Python scripts for extracting, transforming, and combining review data from various platforms
+- `etl_scripts/app_store_etl.py`  Extracts reviews from App Store using its API and processes them into a structured dataset.
+- `etl_scripts/google_play_etl.py` Extracts reviews from Google Play Store using its API and processes them into a structured dataset.
+- `etl_scripts/reddit_etl.py` Extracts reviews from Reddit using Reddit's API (PRAW or Pushshift) and processes them into structured format.
+- `etl_scripts/s3_backup.py` Uploads processed review datasets to AWS S3 using boto3 for backup and remote storage.
+
+### notebooks/:  Contains all the Jupyter notebooks related to data analysis, EDA, modeling, and classification
+- `notebooks/EDA.ipynb` Performs exploratory data analysis and visualizations on review data using Plotly and ipywidgets.
+- `notebooks/Emotion_Analysis.ipynb`Analyzes emotions in review texts using transformer models and NLP
+- `notebooks/Sentiment_Analysis.ipynb`Performs sentiment analysis and interactive visualizations across data sources.
+- `notebooks/Topic Modeling.ipynb` Extracts and visualizes main themes from reviews using topic modeling techniques.
+- `notebooks/Zero_Shot_Classification.ipynb` Classifies reviews into categories using zero-shot classification with Hugging Face models.
+
+
 
 [Give a short description of what the notebooks contain, and their location in the git repo]
 
@@ -52,7 +64,7 @@ Your summary should include the following.
 
 Note: You do not need code in your summary - instead, reference where in your github repo the code is. The priority should be a concise, readable summary. You should include visualizations and conclusions regarding your data analysis.
 
-1. # Data Collection and Sources
+# 1. Data Collection and Sources
 The data for this project was extracted from three major digital platforms: Reddit, Google Play Store, and Apple App Store.
 We focused specifically on gathering user reviews related to three food delivery brands: Uber Eats, DoorDash, and GrubHub.
 The collected data includes:
@@ -66,14 +78,14 @@ App name (UberEats, DoorDash, GrubHub)
 The extracted reviews were organized and stored in CSV file format, where each row represents one user review with associated metadata.
 Data was collected as a one-time extraction for this project and is not automatically updated on a regular basis. However, the framework allows future re-scraping to keep the dataset updated if needed.
 
-2. # Data Sources, Retrieval, and Structure
+# 2. Data Sources, Retrieval, and Structure
 We retrieved the data primarily using official APIs and custom scraping tools for each platform:
 Google Play Store: Data was collected through the Play Store API, using Python-based scraping tools to extract app reviews, ratings, and timestamps.
 Apple App Store: Reviews were accessed using the App Store Scraper API, which allowed us to gather user feedback, rating information, and timestamps for the specified apps.
 Reddit: We used the Pushshift API to collect relevant posts and comments mentioning Uber Eats, DoorDash, and GrubHub. Additional metadata like upvotes, timestamps, and subreddit names were captured during the scraping process.
 All retrieval processes required setting up API keys, handling pagination, and implementing rate limits where necessary to avoid service disruptions. The extracted raw data was then exported into CSV files for further cleaning and analysis.
 
-3. # Data Cleaning and Transformation
+# 3. Data Cleaning and Transformation
 After extracting the raw data from various platforms, we performed a structured **ETL (Extract, Transform, Load)** process to transform the reviews into a clean, tidy tabular format suitable for analysis.
 The main data cleaning and transformation steps included:
 - **Text Normalization**:
@@ -102,7 +114,7 @@ The main data cleaning and transformation steps included:
 
 By following these steps, we ensured that the final datasets were **clean, consistent, complete**, and **ready for downstream analysis and visualization**.
 
-4. # Sanity Checks and Validation
+# 4. Sanity Checks and Validation
 After cleaning and structuring the raw data, we performed several validation steps to ensure the quality and integrity of the final datasets:
 - **Missing Values Check**:
   - Verified that critical fields like `review_text`, `timestamp`, and `data_source` had no missing values.
@@ -121,7 +133,7 @@ While we did not use a formal `pytest` framework, we incorporated **assertion-ba
 
 These validations helped ensure that the data was **accurate**, **consistent**, and **ready for robust analysis and modeling**.explain any tests you did to check data (e.g. using `pytest` to verify that no missing values are present in the tidied dataframes, verify that the resulting number of rows is reasonable)
 
-5. # Data Enrichment
+# 5. Data Enrichment
 Beyond cleaning the raw reviews, we performed several **data enrichment** steps to add additional features and context to the dataset:
 - **Sentiment Labeling**:
   - Used Natural Language Processing (NLP) models to assign a **sentiment** label (**positive**, **neutral**, or **negative**) to each review based on the text content.
@@ -133,7 +145,7 @@ These enrichment steps enhanced the original datasets, making them **more inform
 
 
 
-6. # Summary Statistics
+# 6. Summary Statistics
 
 After cleaning and enriching the dataset, we calculated several **summary statistics** to better understand the overall trends and patterns in user reviews across platforms and apps.
 
@@ -159,6 +171,70 @@ They provided an initial **high-level view** of customer feedback patterns acros
 7. present around 4-6 visualizations related to the data, explain trends and conclusions
 
 You should have at least one interactive data widget.
+
+### 📌 Data Architecture
+
+<img src="src/Data_Architecture.png" width="600">
+
+**Description:**  
+This diagram explains the entire data pipeline workflow. The process starts with extracting raw data from various APIs, namely Reddit, Playstore, and Appstore. Once collected, the data undergoes a series of transformation steps to clean, structure, and make it analysis-ready. The transformed data is then securely loaded and backed up into multiple formats (CSV, XLSX, SQL) as well as pushed to Amazon S3 for long-term storage and recovery.
+
+The processed datasets are subsequently fed into various analytical modules — including Sentiment Analysis to capture user sentiment, Emotion Analysis to detect underlying emotions, Topic Modelling to identify common discussion topics, and Zero Shot Classification for flexible categorization of reviews without manual labeling.
+
+Finally, the results from these models are aggregated and visualized to enable data-driven decision making and insights generation for stakeholders.
+
+---
+
+### 📈 Monthly Review Counts per App
+
+<img src="src/Yearly-Analysis.png" width="600" style="display: block; margin-left: 0;">
+
+**Description:**  
+The line graph shows review counts varied month-over-month. UberEats and Doordash show seasonal trends, Grubhub is more stable.
+
+### 📌 Sentiment Distribution per App
+
+<img src="src/Pie_Chart.png" width="600">
+
+**Description:**  
+These donut charts show sentiment distribution (Positive, Neutral, Negative) for UberEats, DoorDash, and GrubHub. UberEats shows the highest negative sentiment, followed by DoorDash and GrubHub.
+
+---
+
+### 📌 Emotion Analysis
+
+<img src="src/Emotion_Analysis.png" width="600">
+
+**Description:**  
+This bar chart highlights the average emotion scores detected across reviews. "Disappointment" emerged as the most frequent emotion followed by excitement and relief, reflecting customer dissatisfaction prominently.
+
+---
+
+### 📌 Topic Modeling
+
+<img src="src/Topic_Modeling.png" width="600">
+
+**Description:**  
+The bar plot shows the top 30 terms contributing to one of the extracted topics from customer reviews. These terms help us understand recurring issues like order, service, and refund.
+
+---
+
+### 📌 Negative Word Cloud (App Wise)
+
+<img src="src/Word_Cloud.png" width="600">
+
+**Description:**  
+The word clouds visualize the most frequent negative terms mentioned by users for each app — UberEats, DoorDash, and GrubHub. Prominent words like "order", "service", and "delivery" point to key pain points.
+
+---
+### 📌 Zero Shot Classification
+
+<img src="src/Zero-Shot_Cassification.png" width="600">
+
+**Description:**  
+This plot shows the classification of reviews into complaint categories without explicit labels using Zero-Shot learning. "Unresponsive Customer Service" and "Overpriced" were among the most detected issues.
+
+---
 
 You can include figures for example from an external notebook:
 - https://quarto.org/docs/blog/posts/2023-03-17-jupyter-cell-embedding/ 
