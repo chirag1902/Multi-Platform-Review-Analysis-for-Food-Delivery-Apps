@@ -32,8 +32,16 @@ NOTE: do not include your data in your git repo - it will likely be too large an
 ## Python scripts / notebooks
 
 The following scripts/notebooks were used produce the summary:
+# pipeline: Orchestrates the ETL workflow by running scripts to extract reviews from APIs and process them sequentially.
+- `pipeline/run_pipeline.py` Executes all ETL scripts in order (App Store, Google Play, Reddit) to extract reviews using APIs and generate processed datasets.
 
-# notebooks #  Contains all the Jupyter notebooks related to data analysis, EDA, modeling, and classification
+# etl_scripts: Python scripts for extracting, transforming, and combining review data from various platforms
+- `etl_scripts/app_store_etl.py`  Extracts reviews from App Store using its API and processes them into a structured dataset.
+- `etl_scripts/google_play_etl.py` Extracts reviews from Google Play Store using its API and processes them into a structured dataset.
+- `etl_scripts/reddit_etl.py` Extracts reviews from Reddit using Reddit's API (PRAW or Pushshift) and processes them into structured format.
+- `etl_scripts/s3_backup.py` Uploads processed review datasets to AWS S3 using boto3 for backup and remote storage.
+
+# notebooks:  Contains all the Jupyter notebooks related to data analysis, EDA, modeling, and classification
 - `notebooks/EDA.ipynb` Performs exploratory data analysis and visualizations on review data using Plotly and ipywidgets.
 - `notebooks/Emotion_Analysis.ipynb`Analyzes emotions in review texts using transformer models and NLP
 - `notebooks/Sentiment_Analysis.ipynb`Performs sentiment analysis and interactive visualizations across data sources.
@@ -56,7 +64,7 @@ Your summary should include the following.
 
 Note: You do not need code in your summary - instead, reference where in your github repo the code is. The priority should be a concise, readable summary. You should include visualizations and conclusions regarding your data analysis.
 
-1. # Data Collection and Sources
+# 1. Data Collection and Sources
 The data for this project was extracted from three major digital platforms: Reddit, Google Play Store, and Apple App Store.
 We focused specifically on gathering user reviews related to three food delivery brands: Uber Eats, DoorDash, and GrubHub.
 The collected data includes:
@@ -70,14 +78,14 @@ App name (UberEats, DoorDash, GrubHub)
 The extracted reviews were organized and stored in CSV file format, where each row represents one user review with associated metadata.
 Data was collected as a one-time extraction for this project and is not automatically updated on a regular basis. However, the framework allows future re-scraping to keep the dataset updated if needed.
 
-2. # Data Sources, Retrieval, and Structure
+# 2. Data Sources, Retrieval, and Structure
 We retrieved the data primarily using official APIs and custom scraping tools for each platform:
 Google Play Store: Data was collected through the Play Store API, using Python-based scraping tools to extract app reviews, ratings, and timestamps.
 Apple App Store: Reviews were accessed using the App Store Scraper API, which allowed us to gather user feedback, rating information, and timestamps for the specified apps.
 Reddit: We used the Pushshift API to collect relevant posts and comments mentioning Uber Eats, DoorDash, and GrubHub. Additional metadata like upvotes, timestamps, and subreddit names were captured during the scraping process.
 All retrieval processes required setting up API keys, handling pagination, and implementing rate limits where necessary to avoid service disruptions. The extracted raw data was then exported into CSV files for further cleaning and analysis.
 
-3. # Data Cleaning and Transformation
+# 3. Data Cleaning and Transformation
 After extracting the raw data from various platforms, we performed a structured **ETL (Extract, Transform, Load)** process to transform the reviews into a clean, tidy tabular format suitable for analysis.
 The main data cleaning and transformation steps included:
 - **Text Normalization**:
@@ -106,7 +114,7 @@ The main data cleaning and transformation steps included:
 
 By following these steps, we ensured that the final datasets were **clean, consistent, complete**, and **ready for downstream analysis and visualization**.
 
-4. # Sanity Checks and Validation
+# 4. Sanity Checks and Validation
 After cleaning and structuring the raw data, we performed several validation steps to ensure the quality and integrity of the final datasets:
 - **Missing Values Check**:
   - Verified that critical fields like `review_text`, `timestamp`, and `data_source` had no missing values.
@@ -125,7 +133,7 @@ While we did not use a formal `pytest` framework, we incorporated **assertion-ba
 
 These validations helped ensure that the data was **accurate**, **consistent**, and **ready for robust analysis and modeling**.explain any tests you did to check data (e.g. using `pytest` to verify that no missing values are present in the tidied dataframes, verify that the resulting number of rows is reasonable)
 
-5. # Data Enrichment
+# 5. Data Enrichment
 Beyond cleaning the raw reviews, we performed several **data enrichment** steps to add additional features and context to the dataset:
 - **Sentiment Labeling**:
   - Used Natural Language Processing (NLP) models to assign a **sentiment** label (**positive**, **neutral**, or **negative**) to each review based on the text content.
@@ -137,7 +145,7 @@ These enrichment steps enhanced the original datasets, making them **more inform
 
 
 
-6. # Summary Statistics
+# 6. Summary Statistics
 
 After cleaning and enriching the dataset, we calculated several **summary statistics** to better understand the overall trends and patterns in user reviews across platforms and apps.
 
