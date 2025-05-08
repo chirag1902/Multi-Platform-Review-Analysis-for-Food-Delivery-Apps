@@ -266,11 +266,6 @@ This plot shows the classification of reviews into complaint categories without 
 
 ---
 
-You can include figures for example from an external notebook:
-- https://quarto.org/docs/blog/posts/2023-03-17-jupyter-cell-embedding/ 
-- https://quarto.org/docs/authoring/includes.html
-
-
  #### 8. **Git Commit graph**
 
 ---
