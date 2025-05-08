@@ -1,0 +1,29 @@
+project:
+  title: "Analyzing Customer Experience: Multi-Platform Review Analysis for Food Delivery Apps"
+  type: website
+  output-dir: docs
+  resources:
+    - notebooks/
+  execute-dir: project
+
+format:
+  html:
+    code-fold: true
+
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Notebooks
+        menu:
+          - href: notebooks/Zero_Shot_Classification.ipynb
+            text: Zero-Shot Classification
+          - href: notebooks/Emotion_Analysis.ipynb
+            text: Emotion Analysis
+          - href: notebooks/Sentiment_Analysis.ipynb
+            text: Sentiment Analysis
+          - href: notebooks/EDA.ipynb
+            text: Exploratory Data Analysis
+          - href: notebooks/Topic Modeling.ipynb
+            text: Topic Modeling

@@ -1,0 +1,47 @@
+---
+title: "Analyzing Customer Experience: Multi-Platform Review Analysis for Food Delivery Apps"
+format: html
+---
+
+# Welcome
+
+This project presents a comprehensive analysis of customer experiences across popular food delivery platforms, using user-generated reviews from multiple sources.
+
+We explore **natural language processing (NLP)** techniques to understand what customers say about key aspects of service such as delivery time, app usability, food quality, and customer support. By leveraging machine learning models and modern text classification methods, we extract meaningful insights to support product improvement and competitive analysis.
+
+---
+
+## Objectives
+
+- Analyze and visualize customer sentiment across multiple food delivery apps
+- Apply **zero-shot classification** to identify review topics without labeled data
+- Use **emotion and sentiment analysis** to detect emotional tones in customer feedback
+- Perform **exploratory data analysis (EDA)** to uncover review patterns and trends
+- Apply **topic modeling** to identify hidden themes in large text corpora
+
+---
+
+## Analysis Modules
+
+Explore the full analysis by navigating through the sections below:
+
+- 🔍 [**Zero-Shot Classification**](notebooks/Zero_Shot_Classification.ipynb)  
+  Use transformer models to classify reviews into topics without predefined training labels.
+
+- 😠 [**Emotion Analysis**](notebooks/Emotion_Analysis.ipynb)  
+  Detect the emotional undertone (joy, anger, fear, etc.) in customer reviews.
+
+- 🙂 [**Sentiment Analysis**](notebooks/Sentiment_Analysis.ipynb)  
+  Classify review polarity (positive, negative, neutral) using pretrained sentiment models.
+
+- 📊 [**Exploratory Data Analysis**](notebooks/EDA.ipynb)  
+  Understand review distributions, rating patterns, and platform-level trends.
+
+- 🧠 [**Topic Modeling**](notebooks/Topic_Modeling.ipynb)  
+  Discover key themes in large text datasets using unsupervised learning (LDA/BERT).
+
+---
+
+## Group 19
+
+This project was completed by **Group 19** as part of MSDS 597 – Data Wrangling at Rutgers University, Spring 2025.
