@@ -272,25 +272,13 @@ These donut charts show sentiment distribution (Positive, Neutral, Negative) for
 This bar chart highlights the average emotion scores detected across reviews. "Disappointment" emerged as the most frequent emotion followed by excitement and relief, reflecting customer dissatisfaction prominently.
 
 ---
+### 📌Topic Modeling Clusters 
+<img src="src/Topic_Mod_Clusters.png" width="600">
 
-### 📌 Topic Modeling
-
-<img src="src/Topic_Modeling.png" width="600">
-
-**Description:**  
-The bar plot shows the top 30 terms contributing to one of the extracted topics from customer reviews. These terms help us understand recurring issues like order, service, and refund.
+**Description**
+This visualization highlights Topic 4 as the most dominant theme, centered around keywords like order, service, Grubhub, delivery, and refunds, indicating widespread user dissatisfaction with the ordering and customer service experience.
 
 ---
-
-### 📌 Topic Modeling Clusters
-
-<img src="src/Topic_Modeling_Clusters.png" width="600">
-
-**Description:**  
-This bubble chart visualizes topic modeling clusters, where each circle represents a distinct topic extracted from user reviews, positioned by semantic similarity and sized by topic prevalence.
-
----
-
 ### 📌 Negative Word Cloud (App Wise)
 
 <img src="src/Word_Cloud.png" width="600">
