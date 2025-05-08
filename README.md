@@ -282,6 +282,15 @@ The bar plot shows the top 30 terms contributing to one of the extracted topics 
 
 ---
 
+### 📌 Topic Modeling Clusters
+
+<img src="src/Topic_Modeling_Clusters.png" width="600">
+
+**Description:**  
+This bubble chart visualizes topic modeling clusters, where each circle represents a distinct topic extracted from user reviews, positioned by semantic similarity and sized by topic prevalence.
+
+---
+
 ### 📌 Negative Word Cloud (App Wise)
 
 <img src="src/Word_Cloud.png" width="600">
