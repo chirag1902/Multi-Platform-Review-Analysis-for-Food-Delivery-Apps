@@ -32,21 +32,21 @@ NOTE: do not include your data in your git repo - it will likely be too large an
 ## Python scripts / notebooks
 
 The following scripts/notebooks were used produce the summary:
-# pipeline: Orchestrates the ETL workflow by running scripts to extract reviews from APIs and process them sequentially.
+### pipeline/: Orchestrates the ETL workflow by running scripts to extract reviews from APIs and process them sequentially.
 - `pipeline/run_pipeline.py` Executes all ETL scripts in order (App Store, Google Play, Reddit) to extract reviews using APIs and generate processed datasets.
 
-# etl_scripts: Python scripts for extracting, transforming, and combining review data from various platforms
+### etl_scripts/: Python scripts for extracting, transforming, and combining review data from various platforms
 - `etl_scripts/app_store_etl.py`  Extracts reviews from App Store using its API and processes them into a structured dataset.
 - `etl_scripts/google_play_etl.py` Extracts reviews from Google Play Store using its API and processes them into a structured dataset.
 - `etl_scripts/reddit_etl.py` Extracts reviews from Reddit using Reddit's API (PRAW or Pushshift) and processes them into structured format.
 - `etl_scripts/s3_backup.py` Uploads processed review datasets to AWS S3 using boto3 for backup and remote storage.
 
-# notebooks:  Contains all the Jupyter notebooks related to data analysis, EDA, modeling, and classification
+### notebooks/:  Contains all the Jupyter notebooks related to data analysis, EDA, modeling, and classification
 - `notebooks/EDA.ipynb` Performs exploratory data analysis and visualizations on review data using Plotly and ipywidgets.
 - `notebooks/Emotion_Analysis.ipynb`Analyzes emotions in review texts using transformer models and NLP
 - `notebooks/Sentiment_Analysis.ipynb`Performs sentiment analysis and interactive visualizations across data sources.
-- `notebooksTopic Modeling.ipynb` Extracts and visualizes main themes from reviews using topic modeling techniques.
-- `notebooks\Zero_Shot_Classification.ipynb` Classifies reviews into categories using zero-shot classification with Hugging Face models.
+- `notebooks/Topic Modeling.ipynb` Extracts and visualizes main themes from reviews using topic modeling techniques.
+- `notebooks/Zero_Shot_Classification.ipynb` Classifies reviews into categories using zero-shot classification with Hugging Face models.
 
 
 
