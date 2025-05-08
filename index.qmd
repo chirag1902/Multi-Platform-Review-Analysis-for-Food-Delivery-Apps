@@ -7,17 +7,33 @@ format: html
 
 This project presents a comprehensive analysis of customer experiences across popular food delivery platforms, using user-generated reviews from multiple sources.
 
-We explore **natural language processing (NLP)** techniques to understand what customers say about key aspects of service such as delivery time, app usability, food quality, and customer support. By leveraging machine learning models and modern text classification methods, we extract meaningful insights to support product improvement and competitive analysis.
+We explore **natural language processing (NLP)** techniques to understand what customers say about key aspects of service such as delivery time, app usability, food quality, and customer support. By leveraging pretrained models and modern text classification methods, we extract meaningful insights to support product improvement and competitive analysis.
+
+---
+
+## Summary of Findings
+
+This project investigates customer experiences with major food delivery platforms — **Uber Eats**, **DoorDash**, and **Grubhub** — by analyzing unstructured reviews from **Reddit**, the **App Store**, and **Google Play**. The analysis reveals that **disappointment** is the most commonly expressed emotion, particularly in App Store reviews for Grubhub and Uber Eats. 
+
+Negative sentiment is largely tied to **late or missing orders**, **delivery delays**, **app glitches**, and **unresponsive customer service**. DoorDash also sees notable complaints about **pricing issues**.
+
+**Topic modeling** uncovered four dominant themes across reviews:  
+1. Service quality problems  
+2. Delivery inefficiencies  
+3. App-related frustrations  
+4. A smaller portion of positive feedback  
+
+Based on these insights, we recommend targeted improvements in customer support, logistics, app usability, and pricing to boost user satisfaction and retention.
 
 ---
 
 ## Objectives
 
-- Analyze and visualize customer sentiment across multiple food delivery apps
-- Apply **zero-shot classification** to identify review topics without labeled data
-- Use **emotion and sentiment analysis** to detect emotional tones in customer feedback
-- Perform **exploratory data analysis (EDA)** to uncover review patterns and trends
-- Apply **topic modeling** to identify hidden themes in large text corpora
+- Analyze and visualize customer sentiment across multiple food delivery apps  
+- Apply **zero-shot classification** to identify review topics without labeled data  
+- Use **emotion and sentiment analysis** to detect emotional tones in customer feedback  
+- Perform **exploratory data analysis (EDA)** to uncover review patterns and trends  
+- Apply **topic modeling** to identify hidden themes in large text corpora  
 
 ---
 
@@ -37,7 +53,7 @@ Explore the full analysis by navigating through the sections below:
 - 📊 [**Exploratory Data Analysis**](notebooks/EDA.ipynb)  
   Understand review distributions, rating patterns, and platform-level trends.
 
-- 🧠 [**Topic Modeling**](notebooks/Topic_Modeling.ipynb)  
+- 🧠 [**Topic Modeling**](notebooks/Topic Modeling.ipynb)  
   Discover key themes in large text datasets using unsupervised learning (LDA/BERT).
 
 ---

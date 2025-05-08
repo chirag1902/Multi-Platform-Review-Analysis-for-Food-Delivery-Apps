@@ -155,15 +155,31 @@ ul.task-list li input[type="checkbox"] {
 <section id="welcome" class="level1">
 <h1>Welcome</h1>
 <p>This project presents a comprehensive analysis of customer experiences across popular food delivery platforms, using user-generated reviews from multiple sources.</p>
-<p>We explore <strong>natural language processing (NLP)</strong> techniques to understand what customers say about key aspects of service such as delivery time, app usability, food quality, and customer support. By leveraging machine learning models and modern text classification methods, we extract meaningful insights to support product improvement and competitive analysis.</p>
+<p>We explore <strong>natural language processing (NLP)</strong> techniques to understand what customers say about key aspects of service such as delivery time, app usability, food quality, and customer support. By leveraging pretrained models and modern text classification methods, we extract meaningful insights to support product improvement and competitive analysis.</p>
 <hr>
+<section id="summary-of-findings" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-findings">Summary of Findings</h2>
+<p>This project investigates customer experiences with major food delivery platforms — <strong>Uber Eats</strong>, <strong>DoorDash</strong>, and <strong>Grubhub</strong> — by analyzing unstructured reviews from <strong>Reddit</strong>, the <strong>App Store</strong>, and <strong>Google Play</strong>. The analysis reveals that <strong>disappointment</strong> is the most commonly expressed emotion, particularly in App Store reviews for Grubhub and Uber Eats.</p>
+<p>Negative sentiment is largely tied to <strong>late or missing orders</strong>, <strong>delivery delays</strong>, <strong>app glitches</strong>, and <strong>unresponsive customer service</strong>. DoorDash also sees notable complaints about <strong>pricing issues</strong>.</p>
+<p><strong>Topic modeling</strong> uncovered four dominant themes across reviews:<br>
+1. Service quality problems<br>
+2. Delivery inefficiencies<br>
+3. App-related frustrations<br>
+4. A smaller portion of positive feedback</p>
+<p>Based on these insights, we recommend targeted improvements in customer support, logistics, app usability, and pricing to boost user satisfaction and retention.</p>
+<hr>
+</section>
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
 <ul>
-<li>Analyze and visualize customer sentiment across multiple food delivery apps</li>
-<li>Apply <strong>zero-shot classification</strong> to identify review topics without labeled data</li>
-<li>Use <strong>emotion and sentiment analysis</strong> to detect emotional tones in customer feedback</li>
-<li>Perform <strong>exploratory data analysis (EDA)</strong> to uncover review patterns and trends</li>
+<li>Analyze and visualize customer sentiment across multiple food delivery apps<br>
+</li>
+<li>Apply <strong>zero-shot classification</strong> to identify review topics without labeled data<br>
+</li>
+<li>Use <strong>emotion and sentiment analysis</strong> to detect emotional tones in customer feedback<br>
+</li>
+<li>Perform <strong>exploratory data analysis (EDA)</strong> to uncover review patterns and trends<br>
+</li>
 <li>Apply <strong>topic modeling</strong> to identify hidden themes in large text corpora</li>
 </ul>
 <hr>
@@ -180,7 +196,7 @@ Detect the emotional undertone (joy, anger, fear, etc.) in customer reviews.</p>
 Classify review polarity (positive, negative, neutral) using pretrained sentiment models.</p></li>
 <li><p>📊 <a href="./notebooks/EDA.html"><strong>Exploratory Data Analysis</strong></a><br>
 Understand review distributions, rating patterns, and platform-level trends.</p></li>
-<li><p>🧠 <a href="notebooks/Topic_Modeling.ipynb"><strong>Topic Modeling</strong></a><br>
+<li><p>🧠 <a href="./notebooks/Topic Modeling.html"><strong>Topic Modeling</strong></a><br>
 Discover key themes in large text datasets using unsupervised learning (LDA/BERT).</p></li>
 </ul>
 <hr>

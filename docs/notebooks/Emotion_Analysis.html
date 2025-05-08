@@ -231,7 +231,9 @@ These reviews will be automatically truncated during processing.</code></pre>
 <pre><code>You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset</code></pre>
 </div>
 </div>
-<div id="cell-13" class="cell" data-outputid="67fd4efc-9065-4c9e-b974-4d3ef2af0093" data-execution_count="19">
+<section id="average-emotion-scores-across-all-reviews" class="level2">
+<h2 class="anchored" data-anchor-id="average-emotion-scores-across-all-reviews">Average emotion scores across all reviews</h2>
+<div id="cell-14" class="cell" data-outputid="67fd4efc-9065-4c9e-b974-4d3ef2af0093" data-execution_count="19">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Average emotion scores across all reviews:
@@ -251,7 +253,10 @@ confidence        0.000000
 dtype: float64</code></pre>
 </div>
 </div>
-<div id="cell-15" class="cell" data-outputid="fda9c0b0-5b8e-42f2-eb70-1282e2310fa9">
+</section>
+<section id="average-emotion-scores-across-reviews" class="level2">
+<h2 class="anchored" data-anchor-id="average-emotion-scores-across-reviews">Average Emotion Scores Across Reviews</h2>
+<div id="cell-17" class="cell" data-outputid="fda9c0b0-5b8e-42f2-eb70-1282e2310fa9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Bar plot for average emotion scores across reviews</span></span>
@@ -279,7 +284,11 @@ Passing `palette` without assigning `hue` is deprecated and will be removed in v
 </div>
 </div>
 </div>
-<div id="cell-16" class="cell" data-outputid="09148347-88fb-4f6d-8ee4-30f3b9f9f51b">
+<p>Disappointment is the most prominent emotion, indicating a generally unsatisfactory customer experience. While positive emotions like excitement, relief, and joy appear next, their scores lag behind, showing mixed but leaning-negative sentiment.</p>
+</section>
+<section id="emotion-scores-by-app-rating" class="level2">
+<h2 class="anchored" data-anchor-id="emotion-scores-by-app-rating">Emotion Scores by App Rating</h2>
+<div id="cell-20" class="cell" data-outputid="09148347-88fb-4f6d-8ee4-30f3b9f9f51b">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Analyze emotions by app rating (if app_rating column exists)</span></span>
@@ -314,7 +323,7 @@ Analyzing emotions by app rating...</code></pre>
 </div>
 </div>
 <p>The heatmap clearly shows that disappointment is strongly associated with low ratings (1–2 stars), while positive emotions like excitement, joy, and relief become more prominent in higher-rated reviews (4–5 stars). This trend highlights that emotional tone closely mirrors customer satisfaction levels, with disappointment being a key indicator of negative app experiences.</p>
-<div id="cell-18" class="cell" data-outputid="70bedc1c-3bba-418f-e1f8-dc0774f6fafc" data-execution_count="23">
+<div id="cell-22" class="cell" data-outputid="70bedc1c-3bba-418f-e1f8-dc0774f6fafc" data-execution_count="23">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Dominant emotion counts:
@@ -330,7 +339,10 @@ fear                306
 Name: count, dtype: int64</code></pre>
 </div>
 </div>
-<div id="cell-19" class="cell" data-outputid="6720cdd0-5b98-46a6-db5a-b08a2fda8687">
+</section>
+<section id="dominant-emotions-in-reviews" class="level2">
+<h2 class="anchored" data-anchor-id="dominant-emotions-in-reviews">Dominant Emotions in Reviews</h2>
+<div id="cell-24" class="cell" data-outputid="6720cdd0-5b98-46a6-db5a-b08a2fda8687">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Dominant emotions in reviews bar plot</span></span>
@@ -359,7 +371,10 @@ Passing `palette` without assigning `hue` is deprecated and will be removed in v
 </div>
 </div>
 <p>Disappointment is the dominant emotion in the majority of reviews, significantly outpacing all other emotional categories. Excitement and relief also appear frequently, suggesting some positive experiences. However, the imbalance highlights that customer dissatisfaction is a core theme across feedback platforms</p>
-<div id="cell-21" class="cell" data-outputid="8b9862c3-a0c4-4d99-d99c-186ffc4682fa">
+</section>
+<section id="emotion-scores-by-app" class="level2">
+<h2 class="anchored" data-anchor-id="emotion-scores-by-app">Emotion Scores by App</h2>
+<div id="cell-27" class="cell" data-outputid="8b9862c3-a0c4-4d99-d99c-186ffc4682fa">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Analyze emotions by app name (if app_name column exists)</span></span>
@@ -395,7 +410,10 @@ Analyzing emotions by app name...</code></pre>
 </div>
 </div>
 <p>Disappointment is the leading emotion across DoorDash, Grubhub, and UberEats, with Grubhub and UberEats displaying slightly higher levels. Positive emotions like excitement, joy, and relief appear consistently but are less dominant. This indicates a shared challenge across platforms in fully meeting customer expectations.</p>
-<div id="cell-23" class="cell" data-outputid="45876e02-c873-47dc-c690-933b2bb5efd2">
+</section>
+<section id="most-dynamic-emotions-over-time" class="level2">
+<h2 class="anchored" data-anchor-id="most-dynamic-emotions-over-time">Most Dynamic Emotions Over Time</h2>
+<div id="cell-30" class="cell" data-outputid="45876e02-c873-47dc-c690-933b2bb5efd2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Analyze emotions over time if datetime column exists</span></span>
@@ -457,7 +475,10 @@ Analyzing emotions over time...</code></pre>
 </div>
 </div>
 <p>Disappointment consistently remains the dominant emotion over time, peaking sharply around September 2024. Positive emotions such as relief, joy, and optimism decline steadily after mid-2024, suggesting a gradual deterioration in user satisfaction. Excitement shows relatively stable trends throughout the period.</p>
-<div id="cell-25" class="cell" data-outputid="e2496662-2e19-43b0-cf9f-2fcec5c281ac">
+</section>
+<section id="heatmap-for-emotion-scores-by-data-source" class="level2">
+<h2 class="anchored" data-anchor-id="heatmap-for-emotion-scores-by-data-source">Heatmap for Emotion Scores by Data Source</h2>
+<div id="cell-33" class="cell" data-outputid="e2496662-2e19-43b0-cf9f-2fcec5c281ac">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Analyze emotions by data source if 'data_source' column exists</span></span>
@@ -504,7 +525,10 @@ Analyzing emotions by data source...</code></pre>
 </div>
 </div>
 <p>Disappointment is most pronounced in App Store reviews, indicating a higher level of dissatisfaction compared to Google Play and Reddit. Google Play reviews show a more balanced emotional spread, while Reddit displays lower overall emotional intensity. This highlights that App Store feedback tends to be more emotionally charged and negative.</p>
-<div id="cell-27" class="cell" data-outputid="a2f051b4-83f5-4905-fd7a-1354b7bac41d">
+</section>
+<section id="bar-plot-for-emotion-scores-by-app-and-data-source" class="level2">
+<h2 class="anchored" data-anchor-id="bar-plot-for-emotion-scores-by-app-and-data-source">Bar Plot for Emotion Scores by App and Data Source</h2>
+<div id="cell-36" class="cell" data-outputid="a2f051b4-83f5-4905-fd7a-1354b7bac41d">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Analyze emotions by app and data source</span></span>
@@ -562,7 +586,10 @@ Analyzing emotions by App and Data Source (Bar Plot)...</code></pre>
 </div>
 </div>
 </div>
-<div id="cell-28" class="cell" data-outputid="b5d6a688-ebca-4632-8bae-9dc0bd82c022">
+</section>
+<section id="heatmap-for-emotion-scores-across-apps-and-data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="heatmap-for-emotion-scores-across-apps-and-data-sources">Heatmap for Emotion Scores Across Apps and Data Sources</h2>
+<div id="cell-38" class="cell" data-outputid="b5d6a688-ebca-4632-8bae-9dc0bd82c022">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Analyze emotions by app and data source -  Heatmap</span></span>
@@ -621,6 +648,7 @@ Analyzing emotions by App and Data Source (Simple Heatmap)...</code></pre>
 <p>Disappointment clearly dominates customer emotions across all apps and platforms, especially for Grubhub and UberEats on the App Store. Google Play reviews display more emotional diversity, while Reddit feedback remains relatively muted. This reinforces that App Store reviews tend to reflect stronger dissatisfaction</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script type="application/vnd.jupyter.widget-state+json">
