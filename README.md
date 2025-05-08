@@ -46,10 +46,6 @@ The following scripts/notebooks were used produce the summary:
 
 [Give a short description of what the notebooks contain, and their location in the git repo]
 
-## Reproducibility
-
-Provide a `requirements.txt` file with packages and versions of all python packages to run the analysis.
-
 ### 1. **Clone the Repository**
 ```bash
 git clone https://github.com/moran-teaching/project-group-19.git
@@ -62,13 +58,34 @@ Make sure Python is installed, then run:
 pip install -r requirements.txt
 ```
 
-### 3. **Run the ETL Pipeline**
+### 3. **Set Up Environment Variables**
+Create a `.env` file in the root directory with the following credentials:
+
+```env
+REDDIT_CLIENT_ID=your_client_id
+REDDIT_CLIENT_SECRET=your_client_secret
+REDDIT_USER_AGENT=your_user_agent
+
+AWS_ACCESS_KEY_ID=your_access_key
+AWS_SECRET_ACCESS_KEY=your_secret_key
+```
+
+> These are used to authenticate Reddit API access and (optionally) upload data to S3.
+
+### 4. **Configure App Targets**
+To change or add more apps for data collection, update the configuration file:
+```
+config/apps_config.yaml
+```
+Modify or add entries for each app store and platform as needed.
+
+### 5. **Run the ETL Pipeline**
 This script extracts and processes reviews from the App Store, Google Play, and Reddit:
 ```bash
 python pipeline/run_pipeline.py
 ```
 
-### 4. **Run the Notebooks**
+### 6. **Run the Notebooks**
 Open and run the notebooks in your preferred environment in the following order:
 
 - `notebooks/EDA.ipynb`
@@ -77,7 +94,7 @@ Open and run the notebooks in your preferred environment in the following order:
 - `notebooks/Topic_Modeling.ipynb`
 - `notebooks/Zero_Shot_Classification.ipynb`
 
-### 5. **View the Quarto Documentation Website**
+### 7. **View the Quarto Documentation Website**
 If Quarto is installed, you can preview the documentation site:
 ```bash
 quarto preview
