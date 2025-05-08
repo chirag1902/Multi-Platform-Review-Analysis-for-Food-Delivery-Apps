@@ -303,6 +303,7 @@ You can include figures for example from an external notebook:
 - https://quarto.org/docs/blog/posts/2023-03-17-jupyter-cell-embedding/ 
 - https://quarto.org/docs/authoring/includes.html
 
+
 8. at the end, display a graph of the git commit history
 
 For team members of 2: 10 commits. Of 3: 15 commits. Of 4: 20 commits.
@@ -313,9 +314,13 @@ Make sure your git graphs include author names, commit messages, date, git tags 
 
 You can generate nice graphs of git commits with many tools. Among others, you could generate git-graphs using the following tools:
 
+
 - in vscode: https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
 - https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs
 - https://www.gitkraken.com/solutions/commit-graph
+
+---
+![Commit History Graph](src/Commit_Graph.jpg)
 
 ### Data storage options
 
