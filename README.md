@@ -21,11 +21,11 @@ https://moran-teaching.github.io/project-repo/????????????
 
 Our raw data can be downloaded here:
 
-[Insert link to raw data]
+[[Insert link to raw data](https://drive.google.com/drive/folders/1KH3YcLmdXMqzQBhitRqoxuh1rto7HAZU?usp=drive_link)]
 
 Our processed data can be downloaded here:
 
-[Insert link to processed data]
+[[Insert link to processed data](https://drive.google.com/drive/folders/1vh8fxT1L7R0wrwamN2LZPih3YBMH2oEN?usp=drive_link)]
 
 NOTE: do not include your data in your git repo - it will likely be too large and cause issues.
 
