@@ -177,27 +177,17 @@ You should have at least one interactive data widget.
 <img src="src/Data_Architecture.png" width="600">
 
 **Description:**  
-This diagram explains the entire data pipeline — from extracting data via Reddit, Playstore, and Appstore APIs, transforming it, backing it up to S3, and using the processed data for Sentiment, Emotion, Topic Modeling, and Zero Shot Classification analysis followed by visualizations.
+This diagram explains the entire data pipeline workflow. The process starts with extracting raw data from various APIs, namely Reddit, Playstore, and Appstore. Once collected, the data undergoes a series of transformation steps to clean, structure, and make it analysis-ready. The transformed data is then securely loaded and backed up into multiple formats (CSV, XLSX, SQL) as well as pushed to Amazon S3 for long-term storage and recovery.
+
+The processed datasets are subsequently fed into various analytical modules — including Sentiment Analysis to capture user sentiment, Emotion Analysis to detect underlying emotions, Topic Modelling to identify common discussion topics, and Zero Shot Classification for flexible categorization of reviews without manual labeling.
+
+Finally, the results from these models are aggregated and visualized to enable data-driven decision making and insights generation for stakeholders.
 
 ---
-
-### 📊 Review Counts on Google Play and Reddit
-
-<p align="center">
-  <img src="src/EDA.png" width="500"/>
-</p>
-
-**Description:**  
-This plot compares the number of reviews received on Google Play and Reddit for each app. UberEats dominates, followed by Doordash and Grubhub.
-
----
-
 
 ### 📈 Monthly Review Counts per App
 
-<p align="center">
-  <img src="src/Yearly-Analysis.png" width="500"/>
-</p>
+<img src="src/filename.png" width="600" style="display: block; margin-left: 0;">
 
 **Description:**  
 The line graph shows review counts varied month-over-month. UberEats and Doordash show seasonal trends, Grubhub is more stable.
