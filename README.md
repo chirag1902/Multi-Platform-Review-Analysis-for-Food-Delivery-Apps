@@ -171,25 +171,80 @@ They provided an initial **high-level view** of customer feedback patterns acros
 7. present around 4-6 visualizations related to the data, explain trends and conclusions
 
 You should have at least one interactive data widget.
-<img src="src/EDA.png" width="600">
+
+### 📌 Data Architecture
+
+<img src="src/Data_Architecture.png" width="600">
 
 **Description:**  
-The above plot compares the number of reviews received on Google Play and Reddit for each app (Ubereats, Doordash, Grubhub). Ubereats dominates in both platforms, followed by Doordash and Grubhub.
+This diagram explains the entire data pipeline — from extracting data via Reddit, Playstore, and Appstore APIs, transforming it, backing it up to S3, and using the processed data for Sentiment, Emotion, Topic Modeling, and Zero Shot Classification analysis followed by visualizations.
 
 ---
+
+### 📊 Review Counts on Google Play and Reddit
+
+<p align="center">
+  <img src="src/EDA.png" width="500"/>
+</p>
+
+**Description:**  
+This plot compares the number of reviews received on Google Play and Reddit for each app. UberEats dominates, followed by Doordash and Grubhub.
+
+---
+
 
 ### 📈 Monthly Review Counts per App
 
-<img src="src/Yearly-Analysis.png" width="600">
+<p align="center">
+  <img src="src/Yearly-Analysis.png" width="500"/>
+</p>
 
 **Description:**  
-The line graph shows how review counts varied month-over-month for each app. Ubereats and Doordash show seasonal patterns while Grubhub remains lower and stable.
+The line graph shows review counts varied month-over-month. UberEats and Doordash show seasonal trends, Grubhub is more stable.
+
+### 📌 Sentiment Distribution per App
+
+<img src="src/Pie_Chart.png" width="600">
+
+**Description:**  
+These donut charts show sentiment distribution (Positive, Neutral, Negative) for UberEats, DoorDash, and GrubHub. UberEats shows the highest negative sentiment, followed by DoorDash and GrubHub.
 
 ---
 
-![Emotion_Analysis](src/Emotion_Analysis.png)
-![Zero-Shot_Classification](src/Zero-Shot_Cassification.png)
-![Topic_Modeling](src/Topic_Modeling)
+### 📌 Emotion Analysis
+
+<img src="src/Emotion_Analysis.png" width="600">
+
+**Description:**  
+This bar chart highlights the average emotion scores detected across reviews. "Disappointment" emerged as the most frequent emotion followed by excitement and relief, reflecting customer dissatisfaction prominently.
+
+---
+
+### 📌 Topic Modeling
+
+<img src="src/Topic_Modeling.png" width="600">
+
+**Description:**  
+The bar plot shows the top 30 terms contributing to one of the extracted topics from customer reviews. These terms help us understand recurring issues like order, service, and refund.
+
+---
+
+### 📌 Negative Word Cloud (App Wise)
+
+<img src="src/Word_Cloud.png" width="600">
+
+**Description:**  
+The word clouds visualize the most frequent negative terms mentioned by users for each app — UberEats, DoorDash, and GrubHub. Prominent words like "order", "service", and "delivery" point to key pain points.
+
+---
+### 📌 Zero Shot Classification
+
+<img src="src/Zero-Shot_Cassification.png" width="600">
+
+**Description:**  
+This plot shows the classification of reviews into complaint categories without explicit labels using Zero-Shot learning. "Unresponsive Customer Service" and "Overpriced" were among the most detected issues.
+
+---
 
 You can include figures for example from an external notebook:
 - https://quarto.org/docs/blog/posts/2023-03-17-jupyter-cell-embedding/ 
