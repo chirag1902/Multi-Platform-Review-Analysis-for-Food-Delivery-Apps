@@ -203,6 +203,8 @@ Key summary statistics include:
 These descriptive statistics laid the groundwork for more advanced analyses such as sentiment modeling, clustering, and topic extraction.  
 They provided an initial **high-level view** of customer feedback patterns across multiple platforms.
 
+# 7. Data Visualization
+
 ### 📌 Data Architecture
 
 <img src="src/Data_Architecture.png" width="600">
